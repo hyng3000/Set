@@ -1,5 +1,5 @@
 # Set
-Simple Implementation of the Game Set, swiftly gain proficency in Swift UI (I'm Sorry)
+Simple Implementation of the Game Set, to swiftly gain proficency in Swift UI (I'm Sorry)
 
 Inspired by the publicly available CS193P Assignment Specifications. The Rules of the Game can be found here: https://en.wikipedia.org/wiki/Set_(card_game)
 
