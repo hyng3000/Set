@@ -51,6 +51,7 @@ struct ContentView: View {
             }
             DynamicVGrid(items: viewModel.getCardsInPlay()){ card in
                 let symbol = viewModel.makeUISymbol(card: card)
+
                     symbol.asCard(
                         repititions: card.number,
                         isSelected: viewModel.isSelected(card),
@@ -59,7 +60,9 @@ struct ContentView: View {
                         .padding(5)
                         .onTapGesture(perform: {viewModel.selectCard(card)}
                     )
+                    .animation(.easeInOut(duration: 0.5), value: card.isMatched)
                 }
+                
             HStack {
                 Spacer()
                 moreCardsButton
@@ -69,6 +72,7 @@ struct ContentView: View {
             }
         }
     }
+
 
 struct Constants {
     static let fontSize: CGFloat = 40
