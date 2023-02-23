@@ -3,6 +3,8 @@ Simple Implementation of the Game Set, to swiftly gain proficency in Swift UI (I
 
 Inspired by the publicly available CS193P Assignment Specifications. The Rules of the Game can be found here: https://en.wikipedia.org/wiki/Set_(card_game)
 
+Currently adding Animations and modifying the design to improve user experience.
+
   <img
   src="https://user-images.githubusercontent.com/53566395/220231769-7eb57b93-8485-40a9-bd6c-1a50aa403dc4.png"
   width="200" 
