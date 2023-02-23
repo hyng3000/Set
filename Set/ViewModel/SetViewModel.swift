@@ -48,6 +48,10 @@ extension ContentView {
             }
         }
         
+        func getCardDeck() -> Array<SetCard.Card> {
+            return model.cards
+        }
+        
         func getNumberOfCardsInPlay() -> Int {
             return model.numberOfCardsInPlay
         }
