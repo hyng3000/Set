@@ -14,6 +14,9 @@ extension ContentView {
         
         @Published private var model: SetModel<SetCard.Card>
         private(set) var selectedCards: Set<SetCard.Card> = Set<SetCard.Card>()
+        var cards: Array<SetCard.Card> {
+            return model.cards
+        }
         
         init() {
             var setCards = SetCard()
@@ -42,9 +45,9 @@ extension ContentView {
         
         func getCardsInPlay() -> Array<SetCard.Card> {
             if model.numberOfCardsInPlay < model.cards.count {
-                return Array(model.cards[0..<model.numberOfCardsInPlay])
+                return Array(model.cards.suffix(model.numberOfCardsInPlay).reversed())
             } else {
-                return model.cards
+                return model.cards.reversed()
             }
         }
         
